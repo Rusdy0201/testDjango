@@ -17,6 +17,15 @@ posts = [
 
 ]
 
+about = [
+	{
+		'name': 'rusdiansyah',
+		'contact': '+6281362745653',
+		'email': 'rusdynsh@gmail.com'
+		'title': 'About me'
+	}
+]
+
 
 def home(request):
 	context = {
@@ -26,4 +35,7 @@ def home(request):
 	return render(request, 'blog/home.html',context)
 
 def about(request):
-	return render(request, 'blog/about.html')
+	context = {
+		'about': about
+	}
+	return render(request, 'blog/about.html',context)

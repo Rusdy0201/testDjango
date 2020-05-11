@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	{% if title %}
+			<title>Django Blog - {{ title }}</title>
+	{% else %}
+			<title>About Me</title>
+	{% endif %}
 </head>
 <body>
-	<h1>Blog About !!!</h1>
+	{% for me on about %}
+		<h1>Created By {{ me.name }}</h1>
+		<p>My phone {{ me.contact }}</p>
+		<p>My email {{ me.email }}</p>
+	{% endfor %}
 </body>
 </html>
