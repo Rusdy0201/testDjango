@@ -21,8 +21,8 @@ about = [
 	{
 		'name': 'rusdiansyah',
 		'contact': '+6281362745653',
-		'email': 'rusdynsh@gmail.com'
-		'title': 'About me'
+		'email': 'rusdynsh@gmail.com',
+		'aboutTitle': 'About me'
 	}
 ]
 
