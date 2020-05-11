@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
 <head>
+	<meta charset="utf-8">
 	{% if title %}
 			<title>Django Blog - {{ aboutTitle }}</title>
 	{% else %}
 			<title>About Me</title>
 	{% endif %}
 </head>
-<body>
-	{% for me in about %}
-		<h1>Created By {{ me.name }}</h1>
-		<p>My phone {{ me.contact }}</p>
-		<p>My email {{ me.email }}</p>
-	{% endfor %}
-</body>
+	<body>
+		{% for About in abbout %}
+			<h1>Created By {{ About.name }}</h1>
+			<p>My phone {{ About.contact }}</p>
+			<p>My email {{ About.email }}</p>
+		{% endfor %}
+	</body>
 </html>

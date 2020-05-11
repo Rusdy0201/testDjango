@@ -17,7 +17,7 @@ posts = [
 
 ]
 
-about = [
+abbout = [
 	{
 		'name': 'rusdiansyah',
 		'contact': '+6281362745653',
@@ -35,7 +35,7 @@ def home(request):
 	return render(request, 'blog/home.html',context)
 
 def about(request):
-	context = {
-		'about': about
+	contextAbout = {
+		'abbout': abbout
 	}
-	return render(request, 'blog/about.html',context)
+	return render(request, 'blog/about.html',contextAbout)
