@@ -8,7 +8,7 @@
 	{% endif %}
 </head>
 <body>
-	{% for me on about %}
+	{% for me in about %}
 		<h1>Created By {{ me.name }}</h1>
 		<p>My phone {{ me.contact }}</p>
 		<p>My email {{ me.email }}</p>
